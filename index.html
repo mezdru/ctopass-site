@@ -3,7 +3,84 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CTOPASS – Ingénieur logiciel freelance</title>
+  <title>CTOPASS – Ingénieur logiciel freelance | Développement web, mobile & DevOps</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Ingénieur logiciel freelance expert en développement d'applications web, mobiles et architecture cloud. Services de conseil technique, API REST/GraphQL et optimisation DevOps pour propulser vos projets." />
+  <meta name="keywords" content="ingénieur logiciel freelance, développeur freelance, développement web, développement mobile, architecture logicielle, API REST, GraphQL, DevOps, consultant technique, React, Vue.js, Node.js, Python, TypeScript" />
+  <meta name="author" content="CTOPASS - Quentin Drumez" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://home.ctopass.com/" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://home.ctopass.com/" />
+  <meta property="og:title" content="CTOPASS – Ingénieur logiciel freelance | Expert en développement" />
+  <meta property="og:description" content="Transformez vos idées en solutions logicielles exceptionnelles. Expert freelance en développement web, mobile et DevOps." />
+  <meta property="og:image" content="https://home.ctopass.com/og-image.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="CTOPASS" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://home.ctopass.com/" />
+  <meta name="twitter:title" content="CTOPASS – Ingénieur logiciel freelance" />
+  <meta name="twitter:description" content="Expert freelance en développement web, mobile et architecture cloud" />
+  <meta name="twitter:image" content="https://home.ctopass.com/og-image.jpg" />
+  
+  <!-- Performance & Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://www.linkedin.com" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+  
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "CTOPASS",
+    "description": "Ingénieur logiciel freelance expert en développement d'applications web, mobiles et architecture cloud",
+    "url": "https://home.ctopass.com",
+    "logo": "https://home.ctopass.com/og-image.jpg",
+    "founder": {
+      "@type": "Person",
+      "name": "Quentin Drumez",
+      "jobTitle": "Ingénieur logiciel freelance",
+      "url": "https://www.linkedin.com/in/quentindrumez/"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@ctopass.com",
+      "contactType": "Service client"
+    },
+    "areaServed": "FR",
+    "serviceType": [
+      "Développement web",
+      "Développement mobile",
+      "Architecture logicielle",
+      "Conseil technique",
+      "DevOps"
+    ],
+    "knowsAbout": [
+      "React",
+      "Vue.js",
+      "Node.js",
+      "Python",
+      "TypeScript",
+      "Go",
+      "PostgreSQL",
+      "MongoDB",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP"
+    ]
+  }
+  </script>
+  
   <style>
     :root {
       --primary: #6366f1;
@@ -14,8 +91,15 @@
       --light: #f8fafc;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
     body { 
-      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       line-height: 1.6;
       color: var(--dark);
       background: var(--dark);
@@ -430,59 +514,62 @@
   </style>
 </head>
 <body>
-  <section class="hero">
-    <div class="floating-shapes">
-      <div class="shape shape1"></div>
-      <div class="shape shape2"></div>
-      <div class="shape shape3"></div>
-    </div>
-    <div class="hero-content">
-      <h1>CTOPASS</h1>
-      <p class="tagline">Transformez vos idées en solutions logicielles exceptionnelles</p>
-      <div class="cta-group">
-        <a href="#contact" class="btn btn-primary">Démarrer un projet</a>
-        <a href="#services" class="btn btn-secondary">Découvrir mes services</a>
+  <header>
+    <section class="hero" aria-label="Section d'accueil">
+      <div class="floating-shapes" aria-hidden="true">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
       </div>
-    </div>
-  </section>
+      <div class="hero-content">
+        <h1>CTOPASS</h1>
+        <p class="tagline">Transformez vos idées en solutions logicielles exceptionnelles</p>
+        <nav class="cta-group" aria-label="Navigation principale">
+          <a href="#contact" class="btn btn-primary" aria-label="Démarrer un nouveau projet">Démarrer un projet</a>
+          <a href="#services" class="btn btn-secondary" aria-label="Découvrir les services proposés">Découvrir mes services</a>
+        </nav>
+      </div>
+    </section>
+  </header>
 
-  <section class="services-section" id="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Services d'excellence</h2>
-        <p>Des solutions sur mesure pour propulser vos projets</p>
-      </div>
+  <main>
+    <section class="services-section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="services-title">Services d'excellence</h2>
+          <p>Des solutions sur mesure pour propulser vos projets</p>
+        </div>
       <div class="services-grid">
-        <div class="service-card">
+        <article class="service-card">
           <div class="service-card-content">
-            <div class="service-icon">💻</div>
+            <div class="service-icon" role="img" aria-label="Icône développement">💻</div>
             <h3>Développement sur mesure</h3>
             <p>Applications web, mobiles et back-end conçues avec les dernières technologies. Un code robuste, maintenable et évolutif qui s'adapte à votre croissance.</p>
           </div>
-        </div>
-        <div class="service-card">
+        </article>
+        <article class="service-card">
           <div class="service-card-content">
-            <div class="service-icon">🏗️</div>
+            <div class="service-icon" role="img" aria-label="Icône architecture">🏗️</div>
             <h3>Architecture & API</h3>
             <p>Conception d'architectures logicielles modernes et scalables. Intégration de bases de données performantes et APIs REST/GraphQL sécurisées.</p>
           </div>
-        </div>
-        <div class="service-card">
+        </article>
+        <article class="service-card">
           <div class="service-card-content">
-            <div class="service-icon">🚀</div>
+            <div class="service-icon" role="img" aria-label="Icône conseil">🚀</div>
             <h3>Conseil & expertise</h3>
             <p>Accompagnement technique stratégique, audit de code approfondi, optimisation de performances et mise en place des meilleures pratiques DevOps.</p>
           </div>
-        </div>
+        </article>
       </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <section class="about-section" id="about">
-    <div class="container">
-      <div class="about-content">
-        <div class="about-text">
-          <h2>Ingénieur passionné, résultats garantis</h2>
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 id="about-title">Ingénieur passionné, résultats garantis</h2>
           <p>Je suis ingénieur en développement logiciel avec une expertise approfondie dans la création d'applications web, mobiles et systèmes distribués.</p>
           <p>En tant que freelance, je m'engage à transformer vos idées en solutions concrètes, fiables et évolutives. Chaque projet est une opportunité de repousser les limites techniques et de créer de la valeur durable.</p>
           <div class="stats">
@@ -520,28 +607,29 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <section class="contact-section" id="contact">
-    <div class="contact-content">
-      <h2>Prêt à démarrer ?</h2>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-content">
+        <h2 id="contact-title">Prêt à démarrer ?</h2>
       <p>Discutons de votre projet et donnons vie à vos ambitions ensemble</p>
       <div class="contact-info">
         <div class="contact-item">
-          <span>📧</span>
-          <a href="mailto:contact@ctopass.com">contact@ctopass.com</a>
+          <span role="img" aria-label="Email">📧</span>
+          <a href="mailto:contact@ctopass.com" aria-label="Envoyer un email à contact@ctopass.com">contact@ctopass.com</a>
         </div>
         <div class="contact-item">
-          <span>💼</span>
-          <a href="https://www.linkedin.com/in/quentindrumez/" target="_blank">LinkedIn - Connectons-nous</a>
+          <span role="img" aria-label="LinkedIn">💼</span>
+          <a href="https://www.linkedin.com/in/quentindrumez/" target="_blank" rel="noopener noreferrer" aria-label="Voir le profil LinkedIn (ouvre dans un nouvel onglet)">LinkedIn - Connectons-nous</a>
         </div>
       </div>
-      <a href="mailto:contact@ctopass.com" class="btn btn-secondary">Envoyer un message</a>
-    </div>
-  </section>
+      <a href="mailto:contact@ctopass.com" class="btn btn-secondary" aria-label="Envoyer un message par email">Envoyer un message</a>
+      </div>
+    </section>
+  </main>
 
-  <footer>
+  <footer role="contentinfo">
     <p>© 2025 CTOPASS – Tous droits réservés. Créons l'avenir ensemble.</p>
   </footer>
 </body>
